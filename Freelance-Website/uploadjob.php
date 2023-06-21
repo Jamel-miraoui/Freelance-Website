@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       move_uploaded_file($_FILES['cover_image']['tmp_name'], $coverImagePath);
 
       // Insert job data into the database
-      $insert = $db->prepare("INSERT INTO jobs (title, categorie, description, cover_path,user_id) VALUES (:title, :categorie, :description, :cover_image, :userID)");
+      $insert = $db->prepare("INSERT INTO jobspending (title, categorie, description, cover_path,user_id) VALUES (:title, :categorie, :description, :cover_image, :userID)");
       $insert->bindParam(':title', $title);
       $insert->bindParam(':categorie', $categorie);
       $insert->bindParam(':description', $description);

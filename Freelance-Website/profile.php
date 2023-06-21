@@ -29,13 +29,13 @@ $id = $result["id"];
 $queryBooks = "SELECT * FROM jobs WHERE user_id='$id'";
 $bookData = $db->prepare($queryBooks);
 $bookData->execute();
-$books = $bookData->fetchAll(PDO::FETCH_ASSOC);
+$jobs = $bookData->fetchAll(PDO::FETCH_ASSOC);
 
 
 $queryBooksp = "SELECT * FROM jobspending WHERE user_id='$id'";
 $bookDatap = $db->prepare($queryBooksp);
 $bookDatap->execute();
-$booksp = $bookDatap->fetchAll(PDO::FETCH_ASSOC);
+$jobsp = $bookDatap->fetchAll(PDO::FETCH_ASSOC);
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -58,7 +58,7 @@ error_reporting(E_ALL);
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
     body {
-        margin: 0;
+        
         padding: 0;
         font-family: 'Poppins', sans-serif;
         background-color: #ddd;
@@ -70,7 +70,7 @@ error_reporting(E_ALL);
 
     .container {
         display: flex;
-        width: 100%;
+        width: 98%;
         height: 100%;
         padding: 20px 20px;
     }
@@ -234,17 +234,17 @@ error_reporting(E_ALL);
                             <tr>
 
                                 <th>Title</th>
-                                <th>Author</th>
+                                <th>Categorie</th>
                                 <th>Description</th>
                                 <th>Created At</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($books as $book) : ?>
+                            <?php foreach ($jobs as $book) : ?>
                                 <tr>
 
                                     <td><?php echo $book['title']; ?></td>
-                                    <td><?php echo $book['author']; ?></td>
+                                    <td><?php echo $book['categorie']; ?></td>
                                     <td><?php echo $book['description']; ?></td>
                                     <td><?php echo $book['created_at']; ?></td>
                                 </tr>
@@ -262,19 +262,17 @@ error_reporting(E_ALL);
                     <table>
                         <thead>
                             <tr>
-
                                 <th>Title</th>
-                                <th>Author</th>
+                                <th>Categorie</th>
                                 <th>Description</th>
                                 <th>Created At</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($booksp as $book) : ?>
+                            <?php foreach ($jobsp as $book) : ?>
                                 <tr>
-
                                     <td><?php echo $book['title']; ?></td>
-                                    <td><?php echo $book['author']; ?></td>
+                                    <td><?php echo $book['categorie']; ?></td>
                                     <td><?php echo $book['description']; ?></td>
                                     <td><?php echo $book['created_at']; ?></td>
                                 </tr>

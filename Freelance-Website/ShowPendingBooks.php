@@ -1,8 +1,14 @@
 <?php
 include 'navANDhead.php';
 require_once('sessonchekadmin.php');
+
+
+error_reporting(E_ALL);
+error_reporting(-1);
+ini_set('error_reporting', E_ALL);
+
 ?>
-<h1>List of Pending Books</h1>
+<h1>List of Pending Jobs</h1>
 <table>
 
   <?php
@@ -13,13 +19,13 @@ require_once('sessonchekadmin.php');
   $servername = "localhost";
   $username = "sammy";
   $password = "password";
-  $dbname = "greatmove_library";
+  $dbname = "FreeLance";
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
   // Retrieve the list of pending books
-  $sql = "SELECT * FROM bookspenting";
+  $sql = "SELECT * FROM jobspending";
   $result = $conn->query($sql);
 
 
@@ -32,7 +38,7 @@ require_once('sessonchekadmin.php');
 
           <img src="<?php echo $row['cover_path']; ?>" alt="Book 3">
           <h3><?php echo $row['title']; ?></h3>
-          <p><?php echo $row['author']; ?></p>
+          <p><?php echo $row['description']; ?></p>
          <p>uploded by: <?php
           $path = $row['user_id'];
           $sql2 = "SELECT * FROM users WHERE id='$path'";
@@ -41,12 +47,9 @@ require_once('sessonchekadmin.php');
           while($row2 = $result2->fetch_assoc()){
             echo $row2['username'];
           }}else {echo "error";} ?></p>
-           <!-- get book by downald  -->
-          <a href="download.php?filename=<?php echo urlencode($row['file_path']);?>">PDF File</a>
             <!-- rerouting to action performence  -->
           <a href="accept_book.php?id=<?php echo urlencode($row["id"]);?>">Accept</a>
           <a href='delete_book_pending.php?id=<?php echo urlencode($row["id"]);?>'>Delete</a>
-        
         </div>
       </div>
 
