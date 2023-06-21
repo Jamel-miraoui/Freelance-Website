@@ -1,6 +1,5 @@
 <?php
 require_once('sessonchek.php');
-include 'navANDhead.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,17 +14,17 @@ include 'navANDhead.php';
 <div class="formbold-main-wrapper">
 
   <div class="formbold-form-wrapper">
-     <img width="500" src="resorses/frorm2.svg" >
+     <img width="500" src="resorses/from2.jpg" >
 
         <form action="uploadbook.php" method="POST" enctype="multipart/form-data">
-        <label for="title" class="formbold-form-label">Upload a Book:</label>
+        <label for="title" class="formbold-form-label">Upload a Job:</label>
          <div>
-          <label for="title" class="formbold-form-input">Book Title:</label>
+          <label for="title" class="formbold-form-input">Job Title:</label>
           <input type="text" name="title" id="title" class="formbold-form-input"><br>
           </div>
 
           <div>
-          <label for="author_name">Author Name:</label>
+          <label for="author_name">Categorie :</label>
           <input type="text" name="author_name" id="author_name" class="formbold-form-input"><br>
           </div>
 
@@ -34,10 +33,6 @@ include 'navANDhead.php';
           <input type="text" name="category" id="category" class="formbold-form-input"><br>
           </div>
 
-          <div>
-          <label for="pdf_file">PDF File:</label>
-          <input type="file" name="pdf_file"id="pdf_file" class="formbold-form-input formbold-form-file"><br>
-          </div>
 
           <div>
           <label for="cover_image">Cover Image:</label>
