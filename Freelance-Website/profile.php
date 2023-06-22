@@ -20,6 +20,9 @@ $userdata->execute();
 $result = $userdata->fetch(PDO::FETCH_ASSOC);
 
 $id = $result["id"];
+$address= $result["address"];
+$phone_number= $result["phone_number"];
+$additional_info= $result["additional_info"];
 // $queryid = "SELECT id FROM users where username ='$login'";
 // $iddata = $db->prepare($queryid);
 // $iddata->execute();
@@ -53,6 +56,8 @@ error_reporting(E_ALL);
     <title>Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="profile.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -196,7 +201,7 @@ error_reporting(E_ALL);
 <body>
     <div class="container">
         <div class="box">
-            <img src="Profile-Icon-SVG-09856789.png" alt="">
+            <img src="<?php echo $result["profile_pic"]; ?>" alt="">
             <ul>
                 <li><?php
                     echo $result['username'];
@@ -207,6 +212,7 @@ error_reporting(E_ALL);
                     } ?></li>
                     <li>
                     <a href="logout.php"><input type="button" value="Deconnection"></a>
+                    <a href="modiff.php"><input type="button" value="Modifier Profile"></a>
                     </li>
                 <?php
                 if ($_SESSION['login'] == "admin") {
@@ -222,6 +228,21 @@ error_reporting(E_ALL);
                 ?>
 
             </ul>
+        </div>
+        <div class="About">
+            <h1>About</h1>
+            <h2>Address:</h2>
+            <?php
+            echo $address;
+            ?>
+            <h2>Phone_number:</h2>
+            <?php
+            echo $phone_number;
+            ?>
+            <h2>Additional_info:</h2>
+            <?php
+            echo $additional_info;
+            ?>
         </div>
         <div class="About">
             <h1>Activities</h1>

@@ -39,18 +39,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $insert->execute();
 
       if ($insert) {
-        header("Location: uplodebookform.php?msg=1");
+        header("Location: uplodejobform.php?msg=1");
         exit;
       } else {
-        header("Location: uplodebookform.php?msg=2");
+        header("Location: uplodejobform.php?msg=2");
         exit;
       }
     } else {
-      header("Location: uplodebookform.php?msg=3");
+      header("Location: uplodejobform.php?msg=3");
       exit;
     }
   } else {
-    header("Location: uplodebookform.php?msg=4");
+    header("Location: uplodejobform.php?msg=4");
     exit;
   }
 }

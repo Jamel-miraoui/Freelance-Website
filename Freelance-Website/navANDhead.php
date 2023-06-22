@@ -1,7 +1,9 @@
 <?php
 // ini_set("display_errors",'1');
 // error_reporting(E_ALL);
-require_once('connbd.php');?>
+require_once('connbd.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +48,7 @@ require_once('connbd.php');?>
                     }
                 ?>
             </h3>
-            <a href="profile.php"><img src="Profile-Icon-SVG-09856789.png" alt="Profile photo" class="profile-photo"></a>
+            <a href="profile.php"><img src="<?php echo $user3['profile_pic']; ?>" alt="Profile photo" class="profile-photo"></a>
             
         </div>
     </div>
