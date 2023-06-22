@@ -43,7 +43,7 @@ foreach ($jobs as $job) {
                         <h3><?php echo $job['title']; ?></h3>
                         <p><?php echo $job['description']; ?></p>
                     </div>
-                    <a href="apply.php?job_id=<?php echo $job['id']; ?>" class="button">Apply</a>
+                    <a href="showjobdetails.php?job_id=<?php echo $job['id']; ?>" class="button">Apply</a>
                 </div>
             <?php endforeach; ?>
         </div>
