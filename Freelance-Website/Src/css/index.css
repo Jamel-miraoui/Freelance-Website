@@ -5,11 +5,11 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-image: url("../assets/background.webp");  /* fallback for old browsers */
+	background-image: url("../assets/background.jpg");  /* fallback for old browsers */
 	/* background: -webkit-linear-gradient(to right, #0b8793, #360033);
 	background: linear-gradient(to right, #0b8793, #360033);  */
 	background-size: 100%;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	max-width: 100%;
 }
 .main{
@@ -44,7 +44,7 @@ body{
 	text-align: center
 }
 .notif1 {
-	color: rgb(226, 192, 0);
+	color: 5a6bb9;
 	justify-content: center;
 	text-align: center
 }
@@ -83,7 +83,7 @@ button{
 	justify-content: center;
 	display: block;
 	color: #fff;
-	background: #ddbc00;
+	background: #5a6bb9;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -94,7 +94,7 @@ button{
 	cursor: pointer;
 }
 button:hover{
-	background: #f1d900;
+	background: #4457ad;
 }
 .login{
 	height: 530px;
@@ -104,7 +104,7 @@ button:hover{
 	transition: .8s ease-in-out;
 }
 .login label{
-	color: #e0cb07;
+	color: #5a6bb9;
 	transform: scale(.6);
 }
 

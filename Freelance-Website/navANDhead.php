@@ -7,7 +7,7 @@ require_once('connbd.php');?>
 <head>
     <meta charset="UTF-8">
     <title>Courses</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/booksstyle.css">
     
     <style>

@@ -23,29 +23,30 @@ foreach ($jobs as $job) {
 }
 ?>
 
-<div>
-    <a class='button' href="uplodebookform.php"><span>&#43;</span>Add<br>Book</a>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bookcard.css">
+</head>
+<body>
+    <div>
+        <a class='button' href="uplodejobform.php"><span>&#43;</span>Add<br>Job</a>
+    </div>
 
-<?php foreach ($jobsByCategory as $category => $categoryJobs): ?>
-    <h2><?php echo $category; ?></h2>
-    <table>
-        <section>
-            <main>
-                <div class="book-container">
-                    <?php foreach ($categoryJobs as $job): ?>
-                        <div class="book">
-                            <a href="download.php?filename=<?php echo urlencode($job['file_path']); ?>">
-                                <img src="<?php echo $job['cover_path']; ?>" alt="Book 3" width="300">
-                            </a>
-                            <h3><?php echo $job['title']; ?></h3>
-                            <p><?php echo $job['categorie']; ?></p>
-                        </div>
-                    <?php endforeach; ?>
+    <?php foreach ($jobsByCategory as $category => $categoryJobs): ?>
+        <h2><?php echo $category; ?></h2>
+        <div class="card-container">
+            <?php foreach ($categoryJobs as $job): ?>
+                <div class="card">
+                    <img src="<?php echo $job['cover_path']; ?>" alt="Job Image">
+                    <div class="card-content">
+                        <h3><?php echo $job['title']; ?></h3>
+                        <p><?php echo $job['description']; ?></p>
+                    </div>
+                    <a href="apply.php?job_id=<?php echo $job['id']; ?>" class="button">Apply</a>
                 </div>
-            </main>
-        </section>
-    </table>
-<?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+    <?php endforeach; ?>
 </body>
 </html>

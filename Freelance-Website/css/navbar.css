@@ -1,0 +1,60 @@
+/* CSS for the navigation bar */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .header-container h1 {
+    margin: 0;
+  }
+  
+  .search-form {
+    margin: 0 20px;
+  }
+  
+  .search-input {
+    padding: 5px;
+  }
+  
+  .search-submit {
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nava ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nava li {
+    margin-right: 10px;
+  }
+  
+  .nava a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-name {
+    margin-right: 10px;
+  }
+  
+  .profile-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
