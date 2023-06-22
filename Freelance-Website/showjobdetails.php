@@ -9,22 +9,160 @@ $job_id = $_GET['job_id'];
 $query = "SELECT * FROM jobs where id ='$job_id'";
 $userdata = $db->prepare($query);
 $userdata->execute();
-$result = $userdata->fetch(PDO::FETCH_ASSOC);
+$job = $userdata->fetch(PDO::FETCH_ASSOC);
+
+
+$userid = $job['user_id'];
+$query = "SELECT * FROM users where id ='$userid'";
+$userdata = $db->prepare($query);
+$userdata->execute();
+$user = $userdata->fetch(PDO::FETCH_ASSOC);
+
 ?>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
 </head>
+<style>
+    /* CSS Styles for Job Details */
+
+/* CSS Styles for Job Details */
+
+/* CSS Styles for Job Details */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.job-details {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.user-details {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.user-details .user-info {
+  flex: 1;
+}
+
+.user-details .user-info p {
+  margin: 5px 0;
+}
+
+.user-details .user-photo {
+  flex-shrink: 0;
+  margin-left: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-details .user-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container:after {
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  .user-details .user-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+</style>
 <body>
+    <h1>Job Details</h1>
+    
+    <?php
+    echo "<h2>Job Title: " . $job['title'] . "</h2>";
+    echo "<p>Category: " . $job['categorie'] . "</p>";
+    echo "<p>Job Description: " . $job['description'] . "</p>";
+    echo "<img src='" . $job['cover_path'] . "' alt='Job Cover Image'>";
+    
+    echo "<h3>Uploaded By:</h3>";
+    echo "<p>Name: " . $user['username'] . "</p>";
+    echo "<p>Email: " . $user['email'] . "</p>";
+    echo "<p>Address: " . $user['address'] . "</p>";
+    echo "<p>Phone Number: " . $user['phone_number'] . "</p>";
+    echo "<p>Additional Info: " . $user['additional_info'] . "</p>";
+    echo "<img src='" . $user['profile_pic'] . "' alt='User Profile Picture'>";
+    
+    ?>
 
-    <div>
-        <?php echo $result["title"] ?>
-    </div>
-
-    <div>
-
-    </div>
 </body>
 </html>
