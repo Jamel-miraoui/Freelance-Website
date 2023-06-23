@@ -8,6 +8,7 @@ error_reporting(-1);
 ini_set('error_reporting', E_ALL);
 
 ?>
+
 <h1>List of Pending Jobs</h1>
 <table>
 
