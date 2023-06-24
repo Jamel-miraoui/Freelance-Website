@@ -20,9 +20,9 @@ $userdata->execute();
 $result = $userdata->fetch(PDO::FETCH_ASSOC);
 
 $id = $result["id"];
-$address= $result["address"];
-$phone_number= $result["phone_number"];
-$additional_info= $result["additional_info"];
+$address = $result["address"];
+$phone_number = $result["phone_number"];
+$additional_info = $result["additional_info"];
 // $queryid = "SELECT id FROM users where username ='$login'";
 // $iddata = $db->prepare($queryid);
 // $iddata->execute();
@@ -57,33 +57,33 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="profile.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="icon" href="images/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/scrollbar.css">
-	<link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/jquery-ui.css">
-	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/tipso.css">
-	<link rel="stylesheet" href="css/chosen.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/color.css">
-	<link rel="stylesheet" href="css/transitions.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/tipso.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
     body {
-        
+
         padding: 0;
         font-family: 'Poppins', sans-serif;
         background-color: #ddd;
@@ -187,8 +187,10 @@ error_reporting(E_ALL);
         box-shadow: 0 0 0 2px #ff6363;
     }
 
-    h2{
-        background-color: #0d1425;
+    h2 {
+        background-color: hsla(0, 100%, 50%, 0.1);
+        border-radius: 2%;
+        text-align: center;
     }
 
     @media screen and (max-width: 1068px) {
@@ -228,12 +230,12 @@ error_reporting(E_ALL);
                     ?></li>
                 <li><?php
                     if ($_SESSION['login'] != "admin") {
-                        echo "ROLE: Normale User" ;
+                        echo "ROLE: Normale User";
                     } ?></li>
-                    <li>
+                <li>
                     <a href="logout.php"><input type="button" value="Deconnection"></a>
                     <a href="modiff.php"><input type="button" value="Modifier Profile"></a>
-                    </li>
+                </li>
                 <?php
                 if ($_SESSION['login'] == "admin") {
                 ?>
@@ -263,6 +265,54 @@ error_reporting(E_ALL);
             <?php
             echo $additional_info;
             ?>
+            <h1>cv :</h1>
+            <form action="uploadcv.php" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="pdf_file">PDF File:</label>
+                    <input type="file" name="pdf_file" id="pdf_file" class="formbold-form-input formbold-form-file"><br>
+                </div>
+                <input type="submit" value="Change CV" class="formbold-btn">
+            </form>
+
+            <?php
+            // profile.php
+
+            // Check if the 'msg' parameter is set in the URL
+            if (isset($_GET['msg'])) {
+                $message = "";
+
+                // Retrieve the value of the 'msg' parameter
+                switch ($_GET['msg']) {
+                    case '1':
+                        $message = "File uploaded successfully.";
+                        break;
+                    case '3':
+                        $message = "Database update failed.";
+                        break;
+                    case '4':
+                        $message = "File upload failed.";
+                        break;
+                    case '5':
+                        $message = "File size exceeds the limit.";
+                        break;
+                    case '6':
+                        $message = "Invalid file type.";
+                        break;
+                    case '7':
+                        $message = "No file selected or upload error occurred.";
+                        break;
+                    default:
+                        $message = "";
+                        break;
+                }
+
+                // Display the message
+                if (!empty($message)) {
+                    echo "<h3>" . $message . "</h3>";
+                }
+            }
+            ?>
+            </h3>
         </div>
         <div class="About">
             <h1>Activities</h1>

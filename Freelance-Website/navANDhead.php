@@ -48,7 +48,14 @@ require_once('connbd.php');
                     }
                 ?>
             </h3>
-            <a href="profile.php"><img src="<?php echo $user3['profile_pic']; ?>" alt="Profile photo" class="profile-photo"></a>
+            <a href="profile.php"><img src="<?php 
+            if(isset($_SESSION['login'])){
+                echo $user3['profile_pic'];
+                }
+                   else{
+                       echo "Profile-Icon-SVG-09856789.png";
+                   }
+            ?>" alt="Profile photo" class="profile-photo"></a>
             
         </div>
     </div>

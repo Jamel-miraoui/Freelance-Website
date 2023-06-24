@@ -1,11 +1,12 @@
 <?php
 include 'navANDhead.php';
- ?>
+?>
 <!doctype html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->	<html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
 
 
 <head>
@@ -33,6 +34,7 @@ include 'navANDhead.php';
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
+
 <body class="wt-login">
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -209,11 +211,6 @@ include 'navANDhead.php';
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-sm-12 col-md-12 col-lg-12 float-left">
-									<div class="wt-btnarea">
-										<a href="javascript:void(0)" class="wt-btn">View All</a>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -382,8 +379,9 @@ include 'navANDhead.php';
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 								<div class="wt-footerlogohold">
 									<strong class="wt-logo"><a href="index-2.html"><img src="images/flogo.png" alt="company logo here"></a></strong>
-									<div class="wt-description">
-										<p>Dotem eiusmod tempor incune utnaem labore etdolore maigna aliqua enim poskina ilukita ylokem lokateise ination voluptate velit esse cillum dolore eu fugiat nulla pariatur lokaim urianewce <a href="javascript:void(0);">more...</a></p>
+									<div class="map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d327.823103734494!2d10.640221851072043!3d35.830159406718344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13027574ef0fc4df%3A0x10c6d031a95c21ef!2sMedia%20Formation!5e0!3m2!1sen!2stn!4v1687531698623!5m2!1sen!2stn" 
+											width="600" height="450" style="border:0;border-radius: 2%;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 									</div>
 									<ul class="wt-socialiconssimple wt-socialiconfooter">
 										<li class="wt-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
@@ -422,7 +420,9 @@ include 'navANDhead.php';
 										<li><a href="javascript:void(0);">Find Jobs</a></li>
 										<li class="wt-viewmore"><a href="javascript:void(0);">+ View All</a></li>
 									</ul>
+
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -458,8 +458,6 @@ include 'navANDhead.php';
 						</div>
 					</div>
 				</div>
-				<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d327.823103734494!2d10.640221851072043!3d35.830159406718344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13027574ef0fc4df%3A0x10c6d031a95c21ef!2sMedia%20Formation!5e0!3m2!1sen!2stn!4v1687531698623!5m2!1sen!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</footer>
 			<!--Footer End-->
 		</div>
