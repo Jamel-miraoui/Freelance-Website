@@ -33,7 +33,7 @@ require_once('sessonchek.php');
           <option value="Peinture">Peinture</option>
           <option value="Électricité">Électricité</option>
           <option value="Menuisier">Menuisier</option>
-          <option value="forgeron">forgeron</option>
+          <option value="Forgeron">Forgeron</option>
         </select>
       </div>
       <br>
@@ -41,6 +41,11 @@ require_once('sessonchek.php');
       <div>
         <label for="description">description :</label>
         <input type="text" name="description" id="description" class="formbold-form-input"><br>
+      </div>
+
+      <div>
+        <label for="prix">prix :</label>
+        <input type="text" name="prix" id="prix" class="formbold-form-input"><br>
       </div>
 
       <br>

@@ -25,11 +25,12 @@ if ($result->num_rows > 0) {
 	$cat = $row["categorie"];
 	$description = $row["description"];
 	$cover_path = $row["cover_path"];
+	$prix = $row["prix"];
 	$user_id = $row["user_id"];
 
 	
 
-	$sql = "INSERT INTO jobs (title, categorie, description, cover_path, user_id) VALUES ('$title', '$cat', '$description','$cover_path','$user_id')";
+	$sql = "INSERT INTO jobs (title, categorie, description, cover_path, user_id,prix) VALUES ('$title', '$cat', '$description','$cover_path','$user_id','$prix')";
 	if ($conn->query($sql) === TRUE) {
 		// Delete the book from the pending database
 		$sql = "DELETE FROM jobspending WHERE id=".$book_id;

@@ -28,7 +28,7 @@ require_once('connbd.php');
         <nav class="nava">
             <ul>
                 <li class="nava"><a href="index.php">Home</a></li>
-                <li class="nava"><a href="books.php">Explore Jobs</a></li>
+                <li class="nava"><a href="Climatisation.php">Explore Jobs</a></li>
                 <li class="nava"><a href="aboutpage.php">Aboutus</a></li>  
             </ul>
         </nav>

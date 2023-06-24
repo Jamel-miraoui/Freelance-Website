@@ -72,7 +72,7 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 								</div>
 								<ol class="wt-breadcrumb">
 									<li><a href="index.php">Home</a></li>
-									<li><a href="books.php">Explore Jobs</a></li>
+									<li><a href="Climatisation.php">Explore Jobs</a></li>
 									<li class="wt-active">Job Detail</li>
 								</ol>
 							</div>
@@ -94,11 +94,12 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 										<div class="wt-proposalhead">
 											<h2><?php echo "<h2>Job Title: " . $job['title'] . "</h2>"; ?></h2>
 											<ul class="wt-userlisting-breadcrumb wt-userlisting-breadcrumbvtwo">
-												<li><span><i class="fa fa-dollar-sign"></i><i class="fa fa-dollar-sign"></i><i class="fa fa-dollar-sign"></i>Categories :</span></li>
-												<li><span> <?php echo $job['categorie']; ?></span></li>
+												<li><span>Categories  : <?php echo $job['categorie']; ?></span></li>
+												<li><span><i class="far fa-folder"></i> Prix : <?php echo $job['prix']; ?> </span></li>
+												<li><span><i class="far fa-clock"></i> Created date : <?php echo $job['created_at']; ?></span></li>
 											</ul>
 										</div>
-										<div class="wt-btnarea"><a href="books.php" class="wt-btn">Back to Explore</a></div>
+										<div class="wt-btnarea"><a href="downloadcv.php?filename=<?php echo urlencode($user['cv']); ?>" class="wt-btn">Download user cv</a></div>
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-8 float-left">
@@ -121,7 +122,7 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 											<ul class="wt-attachfile">
 												
 													<li>
-														<span>Uer Cv</span>
+														<span>User Cv</span>
 														<em>File size: 512 kb<a href="javascript:void(0);"><i class="lnr lnr-download"></i></a></em>
 													</li>
 												
