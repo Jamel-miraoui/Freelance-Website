@@ -2,7 +2,7 @@
 include 'navANDhead.php';
 require_once('sessonchekadmin.php');
 
-ini_set("display_errors",'1');
+ini_set("display_errors", '1');
 error_reporting(E_ALL);
 
 $job_id = $_GET['job_id'];
@@ -21,9 +21,10 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Job Details</title>
-    <meta name="description" content="">
+	<title>Job Details</title>
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -44,6 +45,7 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
+
 <body class="wt-login">
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -65,12 +67,14 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 					<div class="row justify-content-md-center">
 						<div class="col-xs-12 col-sm-12 col-md-8 push-md-2 col-lg-6 push-lg-3">
 							<div class="wt-innerbannercontent">
-							<div class="wt-title"><h2>Job Detail</h2></div>
-							<ol class="wt-breadcrumb">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="books.php">Explore Jobs</a></li>
-								<li class="wt-active">Job Detail</li>
-							</ol>
+								<div class="wt-title">
+									<h2>Job Detail</h2>
+								</div>
+								<ol class="wt-breadcrumb">
+									<li><a href="index.php">Home</a></li>
+									<li><a href="books.php">Explore Jobs</a></li>
+									<li class="wt-active">Job Detail</li>
+								</ol>
 							</div>
 						</div>
 					</div>
@@ -91,7 +95,7 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 											<h2><?php echo "<h2>Job Title: " . $job['title'] . "</h2>"; ?></h2>
 											<ul class="wt-userlisting-breadcrumb wt-userlisting-breadcrumbvtwo">
 												<li><span><i class="fa fa-dollar-sign"></i><i class="fa fa-dollar-sign"></i><i class="fa fa-dollar-sign"></i>Categories :</span></li>
-												<li><span>  <?php echo $job['categorie']; ?></span></li>
+												<li><span> <?php echo $job['categorie']; ?></span></li>
 											</ul>
 										</div>
 										<div class="wt-btnarea"><a href="books.php" class="wt-btn">Back to Explore</a></div>
@@ -113,19 +117,24 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 												<br><br>
 												<h3>Attachments :</h3>
 											</div>
+											<a href="downloadcv.php?filename=<?php echo urlencode($user['cv']); ?>">
 											<ul class="wt-attachfile">
-												<li>
-													<span>Uer Cv</span>
-													<em>File size: 512 kb<a href="javascript:void(0);"><i class="lnr lnr-download"></i></a></em>
-												</li>
+												
+													<li>
+														<span>Uer Cv</span>
+														<em>File size: 512 kb<a href="javascript:void(0);"><i class="lnr lnr-download"></i></a></em>
+													</li>
+												
+
 											</ul>
+											</a>
 										</div>
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 float-left">
 									<aside id="wt-sidebar" class="wt-sidebar">
 										<div class="wt-proposalsr">
-											
+
 											<div class="tg-authorcodescan">
 												<figure class="tg-qrcodeimg">
 													<img src="<?php echo $user['profile_pic']; ?>" alt="img description">
@@ -139,7 +148,7 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 											</div>
 											<div class="wt-clicksavearea">
 												<span>Job id :<?php echo $job['id']; ?></span>
-												
+
 											</div>
 										</div>
 										<div class="wt-widget wt-sharejob">
@@ -184,4 +193,5 @@ $user = $userdata->fetch(PDO::FETCH_ASSOC);
 	<script src="js/jRate.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>

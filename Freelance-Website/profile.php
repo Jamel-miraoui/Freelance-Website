@@ -266,6 +266,12 @@ error_reporting(E_ALL);
             echo $additional_info;
             ?>
             <h1>cv :</h1>
+            <?php
+               if ($result['cv'] == null) {
+                   echo 'you doesnt upload your cv yett ' ; 
+               }
+               else { echo 'omourk mrigla'  ;}
+            ?>
             <form action="uploadcv.php" method="post" enctype="multipart/form-data">
                 <div>
                     <label for="pdf_file">PDF File:</label>
