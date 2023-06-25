@@ -54,7 +54,7 @@ require_once('sessonchek.php');
         <input type="file" name="cover_image" id="cover_image" class="formbold-form-input formbold-form-file"><br>
       </div>
 
-      <div class="formbold-checkbox-wrapper" hidden >
+      <div class="formbold-checkbox-wrapper" hidden>
         <label for="supportCheckbox" class="formbold-checkbox-label">
           <div class="formbold-relative">
 
@@ -87,35 +87,36 @@ require_once('sessonchek.php');
       </div>
 
       <div>
+        <a href="Climatisation.php"><input type="" value="Back to explore" class="formbold-btn"></a>
         <input type="submit" value="Upload" class="formbold-btn">
+        <br><br>
       </div>
 
-      
       <?php
-  if(isset($_GET['msg'])) {
-    $message = $_GET['msg'];
-    
-    // Define message text and color
-    $text = '';
-    $color = '';
+      if (isset($_GET['msg'])) {
+        $message = $_GET['msg'];
 
-    if($message == 1) {
-      $text = 'Job uploaded successfully.';
-      $color = 'green';
-    } elseif($message == 2) {
-      $text = 'Upload error.';
-      $color = 'red';
-    } elseif($message == 3) {
-      $text = 'Invalid cover image size.';
-      $color = 'red';
-    } elseif($message == 4) {
-      $text = 'Invalid cover image.';
-      $color = 'red';
-    }
-    // Output the message with appropriate color
-    echo '<p style="color: '.$color.'; text-align: center;">'.$text.'</p>';
-  }
-?>
+        // Define message text and color
+        $text = '';
+        $color = '';
+
+        if ($message == 1) {
+          $text = 'Job uploaded successfully.';
+          $color = 'green';
+        } elseif ($message == 2) {
+          $text = 'Upload error.';
+          $color = 'red';
+        } elseif ($message == 3) {
+          $text = 'Invalid cover image size.';
+          $color = 'red';
+        } elseif ($message == 4) {
+          $text = 'Invalid cover image.';
+          $color = 'red';
+        }
+        // Output the message with appropriate color
+        echo '<p style="color: ' . $color . '; text-align: center;">' . $text . '</p>';
+      }
+      ?>
 
 
     </form>

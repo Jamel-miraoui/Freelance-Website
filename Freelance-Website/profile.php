@@ -241,8 +241,8 @@ error_reporting(E_ALL);
                 ?>
                     <li>
                         <a href="UsersControle.php"><input type="button" value="User Manager"></a>
-                        <a href="ShowPendingBooks.php"><input type="button" value="Manage Jobs Pending"></a>
-                        <a href="ShowUplodedBooks.php"><input type="button" value="Manage Uploaded Jobs"></a>
+                        <a href="ShowPendingjobs.php"><input type="button" value="Manage Jobs Pending"></a>
+                        <a href="ShowUplodedjobs.php"><input type="button" value="Manage Uploaded Jobs"></a>
                         <!-- <a href="ShowUplodedCourses.php"><input type="button" value="manage Courses upload"></a> -->
                     </li>
                 <?php

@@ -13,12 +13,12 @@ if ($conn->connect_error) {
 // Retrieve the book ID from the form data
 $book_id = $_GET["id"];
 // Delete the book from the database
-$sql = "DELETE FROM jobs WHERE id=".$book_id;
-if ($conn->query($sql) == TRUE) {
-	echo "Book deleted successfully";
-	header("Location: ShowUplodedBooks.php");
+$sql = "DELETE FROM jobspending WHERE id=".$book_id;
+if ($conn->query($sql) === TRUE) {
+	echo "Job deleted successfully";
+	header("Location: ShowPendingjobs.php");
 } else {
-	echo "Error deleting book: " . $conn->error;
+	echo "Error deleting Job: " . $conn->error;
 }
 $conn->close();
 ?>

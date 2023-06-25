@@ -87,6 +87,7 @@ $result = $userdata->fetch(PDO::FETCH_ASSOC);
       </div>
 
       <div>
+        <a href="profile.php"><input type="" value="Back to Profile" class="formbold-btn"></a>
         <input type="submit" value="Upload" class="formbold-btn">
       </div>
 

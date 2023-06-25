@@ -36,11 +36,10 @@ if ($result->num_rows > 0) {
 		$sql = "DELETE FROM jobspending WHERE id=".$book_id;
 		if ($conn->query($sql) === TRUE) {
 			echo "Book accepted and moved to the books database successfully";
-			header("Location: ShowPendingBooks.php?msg=1");
+			header("Location: ShowPendingjobs.php?msg=1");
 
 		} else {
 			echo "Error deleting book from pending database: " . $conn->error;
-			
 		}
 	} else {
 		echo "Error inserting book into books database: " . $conn->error;
