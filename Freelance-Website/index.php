@@ -69,9 +69,7 @@ include 'navANDhead.php';
 									<div class="wt-title">
 										<h1><span>Hire expert freelancers</span> for any job, Online</h1>
 									</div>
-									<div class="wt-description">
-										<p>Consectetur adipisicing elit sed dotem eiusmod tempor incuntes ut labore etdolore maigna aliqua enim.</p>
-									</div>
+
 								</div>
 								<form class="wt-formtheme wt-formbanner">
 									<fieldset>
@@ -86,14 +84,7 @@ include 'navANDhead.php';
 										</div>
 									</fieldset>
 								</form>
-								<div class="wt-videoholder">
-									<div class="wt-videoshow">
-										<a data-rel="prettyPhoto[video]" href="https://www.youtube.com/watch?v=J37W6DjqT3Q"><i class="fa fa-play"></i></a>
-									</div>
-									<div class="wt-videocontent">
-										<span>See For Yourself!<em>How it works &amp; experience the ultimate joy.</em></span>
-									</div>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -119,11 +110,13 @@ include 'navANDhead.php';
 									<div class="wt-categorycontent">
 										<figure><img src="images/categories/img-01.png" alt="image description"></figure>
 										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Mobiles</a></h3>
+											<h3><a href="Climatisation.php">Climatisation</a></h3>
 										</div>
 										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
+											<p>Air conditioning installation and maintenance
+												Heating, ventilation, and air conditioning
+											</p>
+											<a href="Climatisation.php">Explore <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -131,11 +124,11 @@ include 'navANDhead.php';
 									<div class="wt-categorycontent">
 										<figure><img src="images/categories/img-08.png" alt="image description"></figure>
 										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Digital Marketing</a></h3>
+											<h3><a href="Électricité.php">Électricité</a></h3>
 										</div>
 										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
+											<p>Electrical installation and repair services Complete electrical solutions and troubleshooting</p>
+											<a href="Électricité.php">Explore <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -143,23 +136,11 @@ include 'navANDhead.php';
 									<div class="wt-categorycontent">
 										<figure><img src="images/categories/img-02.png" alt="image description"></figure>
 										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Writing &amp; Translation</a></h3>
+											<h3><a href="Forgeron.php">Forgeron</a></h3>
 										</div>
 										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 float-left">
-									<div class="wt-categorycontent">
-										<figure><img src="images/categories/img-03.png" alt="image description"></figure>
-										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Video &amp; Animation</a></h3>
-										</div>
-										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
+											<p>Traditional blacksmithing craftsmanship and metalwork </p>
+											<a href="Forgeron.php">Explore <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -167,47 +148,11 @@ include 'navANDhead.php';
 									<div class="wt-categorycontent">
 										<figure><img src="images/categories/img-04.png" alt="image description"></figure>
 										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Music &amp; Audio</a></h3>
+											<h3><a href="Peinture.php">Peinture</a></h3>
 										</div>
 										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 float-left">
-									<div class="wt-categorycontent">
-										<figure><img src="images/categories/img-05.png" alt="image description"></figure>
-										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Programming &amp; Tech</a></h3>
-										</div>
-										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 float-left">
-									<div class="wt-categorycontent">
-										<figure><img src="images/categories/img-06.png" alt="image description"></figure>
-										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Business</a></h3>
-										</div>
-										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 float-left">
-									<div class="wt-categorycontent">
-										<figure><img src="images/categories/img-07.png" alt="image description"></figure>
-										<div class="wt-cattitle">
-											<h3><a href="javascrip:void(0);">Fun &amp; Lifestyle</a></h3>
-										</div>
-										<div class="wt-categoryslidup">
-											<p>Consectetur adipisicing elitaed eiusmod tempor incididuatna labore et dolore magna.</p>
-											<a href="javascript:void(0);">Explore <i class="fa fa-arrow-right"></i></a>
+											<p>Professional painting services for homes and businesses</p>
+											<a href="Peinture.php">Explore <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -224,13 +169,13 @@ include 'navANDhead.php';
 								<div class="wt-companydetails">
 									<div class="wt-companycontent">
 										<div class="wt-companyinfotitle">
-											<h2>Start As Company</h2>
+											<h2>Find a Job </h2>
 										</div>
 										<div class="wt-description">
-											<p>Consectetur adipisicing elit sed dotem eiusmod tempor incune utnaem labore etdolore maigna aliqua enim poskina ilukita ylokem lokateise ination voluptate velit esse cillum.</p>
+											<p>where talent meets opportunity! We connect freelancers with clients across diverse industries, offering a wide range of professional services. Join us to showcase your skills or find top-notch freelancers for your projects.</p>
 										</div>
 										<div class="wt-btnarea">
-											<a href="javascript:void(0);" class="wt-btn">Join Now</a>
+											<a href="Climatisation.php" class="wt-btn">Join Now</a>
 										</div>
 									</div>
 									<div class="wt-companycontent">
@@ -238,10 +183,10 @@ include 'navANDhead.php';
 											<h2>Start As Freelancer</h2>
 										</div>
 										<div class="wt-description">
-											<p>Consectetur adipisicing elit sed dotem eiusmod tempor incune utnaem labore etdolore maigna aliqua enim poskina ilukita ylokem lokateise ination voluptate velit esse cillum.</p>
+											<p>Discover the freedom of freelancing on our platform. Access job postings, build your portfolio, and collaborate seamlessly with clients. Join our supportive community and unlock new opportunities today.</p>
 										</div>
 										<div class="wt-btnarea">
-											<a href="javascript:void(0);" class="wt-btn">Join Now</a>
+											<a href="Climatisation.php" class="wt-btn">Join Now</a>
 										</div>
 									</div>
 								</div>
@@ -254,7 +199,9 @@ include 'navANDhead.php';
 				<section class="wt-haslayout wt-main-section">
 					<div class="container">
 						<div class="row">
+
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+								<br> <br> <br> <br>
 								<figure class="wt-mobileimg">
 									<img src="images/mobile-img.png" alt="img description">
 								</figure>
@@ -267,21 +214,10 @@ include 'navANDhead.php';
 											<span>Roam Around With Your Business</span>
 										</div>
 										<div class="wt-description">
-											<p>Dotem eiusmod tempor incune utnaem labore etdolore maigna aliqua enim poskina ilukita ylokem lokateise ination voluptate velit esse cillum dolore eu fugiat nulla pariatur lokaim urianewce.</p>
-											<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumed perspiciatis.</p>
+											<p>MEDIA FORMATION, part of MEDIA GROUP specializing in IT and technology since 2003, is an accredited private training center. Offering diverse courses in fields like web development, multimedia, and networking, we provide accelerated and comprehensive training programs. Our experienced instructors, industry partnerships, and international certification opportunities ensure practical skills and success in the job market.</p>
+
 										</div>
-										<ul class="wt-appicon">
-											<li>
-												<a href="javascript:void(0)">
-													<figure><img src="images/app-icon/img-01.png" alt="img description"></figure>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													<figure><img src="images/app-icon/img-02.png" alt="img description"></figure>
-												</a>
-											</li>
-										</ul>
+
 									</div>
 								</div>
 							</div>
@@ -290,84 +226,7 @@ include 'navANDhead.php';
 				</section>
 				<!--Limitless Experience End-->
 				<!--Skills Start-->
-				<section class="wt-haslayaout wt-main-section wt-footeraboutus">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="wt-widgetskills">
-									<div class="wt-fwidgettitle">
-										<h3>By Skills</h3>
-									</div>
-									<ul class="wt-fwidgetcontent">
-										<li><a href="javascript:void(0);">Software Engineer</a></li>
-										<li><a href="javascript:void(0);">Technical Writer</a></li>
-										<li><a href="javascript:void(0);">UI Designer</a></li>
-										<li><a href="javascript:void(0);">UX Designer</a></li>
-										<li><a href="javascript:void(0);">Virtual Assistant</a></li>
-										<li><a href="javascript:void(0);">Web Designer</a></li>
-										<li><a href="javascript:void(0);">Wordpress Developer</a></li>
-										<li><a href="javascript:void(0);">Content Writer</a></li>
-										<li class="wt-viewmore"><a href="javascript:void(0);">+ View All</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="wt-widgetskill">
-									<div class="wt-fwidgettitle">
-										<h3>Skills In US</h3>
-									</div>
-									<ul class="wt-fwidgetcontent">
-										<li><a href="javascript:void(0);">HTML Developers in US</a></li>
-										<li><a href="javascript:void(0);">HTML5 Developers in US</a></li>
-										<li><a href="javascript:void(0);">JavaScript Developers in US</a></li>
-										<li><a href="javascript:void(0);">Microsoft Word Experts in US</a></li>
-										<li><a href="javascript:void(0);">PowerPoint Experts in US</a></li>
-										<li><a href="javascript:void(0);">Social Media Marketers in US</a></li>
-										<li><a href="javascript:void(0);">WordPress Developers in US</a></li>
-										<li><a href="javascript:void(0);">Writers in US</a></li>
-										<li class="wt-viewmore"><a href="javascript:void(0);">+ View All</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="wt-footercol wt-widgetcategories">
-									<div class="wt-fwidgettitle">
-										<h3>By Categories</h3>
-									</div>
-									<ul class="wt-fwidgetcontent">
-										<li><a href="javascript:void(0);">Graphics &amp; Design</a></li>
-										<li><a href="javascript:void(0);">Digital Marketing</a></li>
-										<li><a href="javascript:void(0);">Writing &amp; Translation</a></li>
-										<li><a href="javascript:void(0);">Video &amp; Animation</a></li>
-										<li><a href="javascript:void(0);">Music &amp; Audio</a></li>
-										<li><a href="javascript:void(0);">Programming &amp; Tech</a></li>
-										<li><a href="javascript:void(0);">Business</a></li>
-										<li><a href="javascript:void(0);">Fun &amp; Lifestyle</a></li>
-										<li class="wt-viewmore"><a href="javascript:void(0);">+ View All</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="wt-widgetbylocation">
-									<div class="wt-fwidgettitle">
-										<h3>By Location</h3>
-									</div>
-									<ul class="wt-fwidgetcontent">
-										<li><a href="javascript:void(0);">Switzerland</a></li>
-										<li><a href="javascript:void(0);">Canada</a></li>
-										<li><a href="javascript:void(0);">Germany</a></li>
-										<li><a href="javascript:void(0);">United Kingdom</a></li>
-										<li><a href="javascript:void(0);">Japan</a></li>
-										<li><a href="javascript:void(0);">Sweden</a></li>
-										<li><a href="javascript:void(0);">Australia</a></li>
-										<li><a href="javascript:void(0);">United States</a></li>
-										<li class="wt-viewmore"><a href="javascript:void(0);">+ View All</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+
 				<!--Skills Start End-->
 			</main>
 			<!--Main End-->
@@ -376,12 +235,19 @@ include 'navANDhead.php';
 				<div class="wt-footerholder wt-haslayout">
 					<div class="container">
 						<div class="row">
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3" >
+								<div class="wt-footercol wt-widgetcompany">
+									<div class="wt-fwidgettitle">
+									</div>
+									<ul class="wt-fwidgetcontent">
+									</ul>
+								</div>
+							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 								<div class="wt-footerlogohold">
 									<strong class="wt-logo"><a href="index-2.html"><img src="images/flogo.png" alt="company logo here"></a></strong>
 									<div class="map">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d327.823103734494!2d10.640221851072043!3d35.830159406718344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13027574ef0fc4df%3A0x10c6d031a95c21ef!2sMedia%20Formation!5e0!3m2!1sen!2stn!4v1687531698623!5m2!1sen!2stn" 
-											width="600" height="450" style="border:0;border-radius: 2%;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d327.823103734494!2d10.640221851072043!3d35.830159406718344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13027574ef0fc4df%3A0x10c6d031a95c21ef!2sMedia%20Formation!5e0!3m2!1sen!2stn!4v1687531698623!5m2!1sen!2stn" width="600" height="450" style="border:0;border-radius: 2%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 									</div>
 									<ul class="wt-socialiconssimple wt-socialiconfooter">
 										<li class="wt-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
@@ -392,34 +258,11 @@ include 'navANDhead.php';
 									</ul>
 								</div>
 							</div>
-							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="wt-footercol wt-widgetcompany">
-									<div class="wt-fwidgettitle">
-										<h3>Company</h3>
-									</div>
-									<ul class="wt-fwidgetcontent">
-										<li><a href="javascript:void(0);">About Us</a></li>
-										<li><a href="javascript:void(0);">How It Works</a></li>
-										<li><a href="javascript:void(0);">Careers</a></li>
-										<li><a href="javascript:void(0);">Terms &amp; Conditions</a></li>
-										<li><a href="javascript:void(0);">Trust &amp; Safety</a></li>
-										<li class="wt-viewmore"><a href="javascript:void(0);">+ View All</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+
+							<div class="col-12 col-sm-6 col-md-3 col-lg-3" >
 								<div class="wt-footercol wt-widgetexplore">
 									<div class="wt-fwidgettitle">
-										<h3>Explore More</h3>
 									</div>
-									<ul class="wt-fwidgetcontent">
-										<li><a href="javascript:void(0);">Freelancers in USA</a></li>
-										<li><a href="javascript:void(0);">Freelancers in Canada</a></li>
-										<li><a href="javascript:void(0);">Freelancers in Australia</a></li>
-										<li><a href="javascript:void(0);">Jobs in USA</a></li>
-										<li><a href="javascript:void(0);">Find Jobs</a></li>
-										<li class="wt-viewmore"><a href="javascript:void(0);">+ View All</a></li>
-									</ul>
 
 								</div>
 
@@ -432,32 +275,16 @@ include 'navANDhead.php';
 						<div class="row justify-content-md-center">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 push-lg-1">
 								<div class="wt-companyinfo">
-									<span><a href="javascript:void(0);">New @ Worktern?</a> Dotem eiusmod tempor incune utnaem labore etdolore.</span>
+									<span><a href="javascript:void(0);"></a>&copy; 2023 YourWebsite. All rights reserved.</span>
 								</div>
 								<div class="wt-fbtnarea">
-									<a href="javascript:void(0)" class="wt-btn">Join Now</a>
+									<a href="Climatisation.php" class="wt-btn">Join Now</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="wt-haslayout wt-footerbottom">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<p class="wt-copyrights"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-								<nav class="wt-addnav">
-									<ul>
-										<li><a href="javascript:void(0);">News</a></li>
-										<li><a href="javascript:void(0);">Terms &amp; Conditions</a></li>
-										<li><a href="javascript:void(0);">Privacy Policy</a></li>
-										<li><a href="javascript:void(0);">Career</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
+
 			</footer>
 			<!--Footer End-->
 		</div>

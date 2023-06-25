@@ -15,8 +15,8 @@ if ($conn->connect_error) {
 	die("Connection failed:" . $conn->connect_error);
 }
 // Retrieve the book information from the pending database
-$book_id = $_GET["id"];
-$sql = "SELECT * FROM jobspending WHERE id=".$book_id;
+$job_id = $_GET["id"];
+$sql = "SELECT * FROM jobspending WHERE id=".$job_id;
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	
@@ -30,10 +30,10 @@ if ($result->num_rows > 0) {
 
 	
 
-	$sql = "INSERT INTO jobs (title, categorie, description, cover_path, user_id,prix) VALUES ('$title', '$cat', '$description','$cover_path','$user_id','$prix')";
+	$sql = "INSERT INTO jobs (title, categorie, description, cover_path, user_id, prix) VALUES ('$title', '$cat', '$description','$cover_path','$user_id','$prix')";
 	if ($conn->query($sql) === TRUE) {
 		// Delete the book from the pending database
-		$sql = "DELETE FROM jobspending WHERE id=".$book_id;
+		$sql = "DELETE FROM jobspending WHERE id=".$job_id;
 		if ($conn->query($sql) === TRUE) {
 			echo "Book accepted and moved to the books database successfully";
 			header("Location: ShowPendingjobs.php?msg=1");

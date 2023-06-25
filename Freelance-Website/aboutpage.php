@@ -56,7 +56,7 @@ include 'navANDhead.php';
 							<div class="wt-innerbannercontent">
 							<div class="wt-title"><h2>A Brief Intro</h2></div>
 							<ol class="wt-breadcrumb">
-								<li><a href="index-2.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li class="wt-active">About</li>
 							</ol>
 							</div>
@@ -83,8 +83,8 @@ include 'navANDhead.php';
 															<span>Start Today For a Great Future</span>
 														</div>
 														<div class="wt-description">
-															<p>Dotem eiusmod tempor incune utnaem labore etdolore maigna aliqua eniina ilukita ylokem lokateise ination voluptate velite esse cillum dolore eu fugnulla pariatur lokaim urianewce anim id est laborumed.</p>
-															<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborumed perspiciatis unde omnis isteatus error aluptatem accusantium doloremque laudantium.</p>
+															<p>Welcome to our freelance website! We are a dynamic and innovative platform that connects talented freelancers with clients from all around the world. Our mission is to empower individuals to pursue their passions and find meaningful work opportunities that align with their skills and expertise. Whether you are a freelancer looking for exciting projects or a client in need of top-notch talent, we are here to bridge the gap and facilitate successful collaborations. With our user-friendly interface and comprehensive features, we strive to make the freelancing experience seamless and enjoyable for everyone involved. Join our vibrant community today and unlock the endless possibilities that await you in the world of freelancing.</p>
+															
 														</div>
 													</div>
 													<div id="wt-statistics" class="wt-statistics">
@@ -109,7 +109,7 @@ include 'navANDhead.php';
 											<div class="col-12 col-sm-12 col-md-12 col-lg-5 float-left">
 												<div class="wt-greetingvideo">
 													<figure>
-														<a data-rel="prettyPhoto[video]" href="https://www.youtube.com/watch?v=J37W6DjqT3Q"><img src="images/video-img.png" alt="video">
+														<a data-rel="prettyPhoto[video]" href="https://youtu.be/-flahpFGQgk"><img src="images/video-img.png" alt="video">
 														</a>
 													</figure>
 												</div>
@@ -130,14 +130,13 @@ include 'navANDhead.php';
 										<div class="col-12 col-sm-12 col-md-12 col-lg-6 pull-right">
 											<div class="wt-signupcontent">
 												<div class="wt-title">
-													<h2><span>Signup as</span>Worktern Pro</h2>
+													<h2><span>Signup as</span>Freelancer </h2>
 												</div>
 												<div class="wt-description">
-													<p>Consectetur adipisicing elit amissed dotem eiusmod tempor incuntes utneai labore etdolore.</p>
 												</div>
 												<div class="wt-btnarea">
-													<a href="javascript:void(0);" class="wt-btn wt-btnvtwo">Join Now</a>
-													<a href="javascript:void(0);" class="wt-btn">What’s new</a>
+													<a href="index.php" class="wt-btn wt-btnvtwo">Home</a>
+													<a href="Climatisation.php" class="wt-btn">Join Now</a>
 												</div>
 											</div>
 										</div>
@@ -148,31 +147,7 @@ include 'navANDhead.php';
 					</section>
 					<!--Signup End-->
 					<!--Brand Start-->
-					<div class="wt-haslayout">
-						<div class="container">
-							<div class="row">
-								<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-									<div id="wt-brandslider" class="wt-barandslider wt-haslayout owl-carousel">
-										<figure class="item wt-brandimg">
-											<img src="images/brands/img-01.png" alt="image description">
-										</figure>
-										<figure class="item wt-brandimg">
-											<img src="images/brands/img-02.png" alt="image description">
-										</figure>
-										<figure class="item wt-brandimg">
-											<img src="images/brands/img-03.png" alt="image description">
-										</figure>
-										<figure class="item wt-brandimg">
-											<img src="images/brands/img-04.png" alt="image description">
-										</figure>
-										<figure class="item wt-brandimg">
-											<img src="images/brands/img-05.png" alt="image description">
-										</figure>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					
 					<!--Brand End-->
 					<!--Our Team Start-->
 					

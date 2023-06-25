@@ -231,10 +231,7 @@ error_reporting(E_ALL);
                 <li><?php
                     echo $result['username'];
                     ?></li>
-                <li><?php
-                    if ($_SESSION['login'] != "admin") {
-                        echo "ROLE: Normale User";
-                    } ?></li>
+                <li></li>
                 <li>
                     <a href="logout.php"><input type="button" value="Deconnection"></a>
                     <a href="modiff.php"><input type="button" value="Modifier Profile"></a>
@@ -255,32 +252,33 @@ error_reporting(E_ALL);
             </ul>
         </div>
         <div class="About">
-            <h1>About</h1>
-            <h2>Address:</h2>
+            
+            <h1 >About</h1>
+            <br><br>
+            <h3>Address:</h3>
             <?php
             echo $address;
             ?>
-            <h2>Phone_number:</h2>
+            <h3>Phone_number:</h3>
             <?php
             echo $phone_number;
             ?>
-            <h2>Additional_info:</h2>
+            <h3>Additional_info:</h3>
             <?php
             echo $additional_info;
-            ?>
-            <h1>cv :</h1>
+            ?> <br><br><br>
+            <h1>Summary :</h1>
             <?php
                if ($result['cv'] == null) {
-                   echo 'you doesnt upload your cv yett ' ; 
+                   echo '<p style="color: red;text-align: center;" >You still without CV pls make the upload</p> ' ; 
                }
-               else { echo 'omourk mrigla'  ;}
+               else { echo '<p style="color: green;text-align: center;" >You have alredy a CV and you cant change it </p> '  ;}
             ?>
             <form action="uploadcv.php" method="post" enctype="multipart/form-data">
                 <div>
-                    <label for="pdf_file">PDF File:</label>
                     <input type="file" name="pdf_file" id="pdf_file" class="formbold-form-input formbold-form-file"><br>
                 </div>
-                <input type="submit" value="Change CV" class="formbold-btn">
+                <input type="submit" value="Uplaod CV" class="formbold-btn">
             </form>
 
             <?php
@@ -325,11 +323,10 @@ error_reporting(E_ALL);
             
         </div>
         <div class="About">
-            <h1>Activities</h1>
+            <h1>Active jobs</h1>
             <div>
-                <br><br><br>
+                <br>
                 <div id="books">
-                    <h2>Jobs</h2>
                     <table>
                         <thead>
                             <tr>
@@ -346,7 +343,7 @@ error_reporting(E_ALL);
 
                                     <td><?php echo $book['title']; ?></td>
                                     <td><?php echo $book['categorie']; ?></td>
-                                    <td><?php echo $book['description']; ?></td>
+                                    <td><?php echo $book['prix']; ?></td>
                                     <td><?php echo $book['created_at']; ?></td>
                                 </tr>
                             <?php endforeach; ?>
@@ -354,12 +351,11 @@ error_reporting(E_ALL);
                     </table>
                 </div>
             </div>
-            <br><br><br><br>
+            <br><br>
             <h1>Jobs Pending</h1>
             <div>
-                <br><br><br>
+                <br>
                 <div id="books">
-                    <h2>Jobs:</h2>
                     <table>
                         <thead>
                             <tr>
@@ -374,7 +370,7 @@ error_reporting(E_ALL);
                                 <tr>
                                     <td><?php echo $book['title']; ?></td>
                                     <td><?php echo $book['categorie']; ?></td>
-                                    <td><?php echo $book['description']; ?></td>
+                                    <td><?php echo $book['prix']; ?></td>
                                     <td><?php echo $book['created_at']; ?></td>
                                 </tr>
                             <?php endforeach; ?>
