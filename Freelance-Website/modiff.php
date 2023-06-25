@@ -22,7 +22,7 @@ $result = $userdata->fetch(PDO::FETCH_ASSOC);
 <div class="formbold-main-wrapper">
 
   <div class="formbold-form-wrapper">
-    <img width="500" src="resorses/from2.jpg">
+    <img width="500" src="resorses/from3.jpg">
 
     <form action="profilechange.php" method="POST" enctype="multipart/form-data">
       <label for="title" class="formbold-form-label">Change infos:</label>

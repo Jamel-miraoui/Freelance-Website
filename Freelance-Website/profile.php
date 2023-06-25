@@ -77,6 +77,8 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/transitions.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <style>
@@ -221,6 +223,7 @@ error_reporting(E_ALL);
 </style>
 
 <body>
+    <br> <br> <br>
     <div class="container">
         <div class="box">
             <img src="<?php echo $result["profile_pic"]; ?>" alt="">
@@ -319,6 +322,7 @@ error_reporting(E_ALL);
             }
             ?>
             </h3>
+            
         </div>
         <div class="About">
             <h1>Activities</h1>
