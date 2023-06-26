@@ -101,7 +101,7 @@ $result = $userdata->fetch(PDO::FETCH_ASSOC);
     $color = '';
 
     if($message == 1) {
-      $text = 'Job uploaded successfully.';
+      $text = 'info change successfully.';
       $color = 'green';
     } elseif($message == 2) {
       $text = 'Upload error.';

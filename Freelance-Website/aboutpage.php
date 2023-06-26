@@ -89,18 +89,14 @@ include 'navANDhead.php';
 													</div>
 													<div id="wt-statistics" class="wt-statistics">
 														<div class="wt-statisticcontent wt-countercolor1">
-															<h3 data-from="0" data-to="1500" data-speed="8000" data-refresh-interval="50">1500</h3>
-															<em>k</em>
+															<h3 data-from="0" data-to="20" data-speed="8000" data-refresh-interval="50">1500</h3>
+															<em></em>
 															<h4>Active Projects</h4>
 														</div>
-														<div class="wt-statisticcontent wt-countercolor2">
-															<h3 data-from="0" data-to="99" data-speed="8000" data-refresh-interval="5.9">99%</h3>
-															<em>%</em>
-															<h4>Great Feedback</h4>
-														</div>
+												
 														<div class="wt-statisticcontent wt-countercolor3">
-															<h3 data-from="0" data-to="5000" data-speed="8000" data-refresh-interval="100">5000</h3>
-															<em>k</em>
+															<h3 data-from="0" data-to="16" data-speed="8000" data-refresh-interval="100">5000</h3>
+															<em></em>
 															<h4>Active Freelancers</h4>
 														</div>
 													</div>

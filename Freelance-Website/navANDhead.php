@@ -8,7 +8,7 @@ require_once('connbd.php');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Courses</title>
+    <title>FreeLance</title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/booksstyle.css">
     
@@ -55,7 +55,7 @@ require_once('connbd.php');
                    else{
                        echo "Profile-Icon-SVG-09856789.png";
                    }
-            ?>" alt="Profile photo" class="profile-photo"></a>
+            ?>" alt="Profile photo" class="profile-photo" style="width: 50px;height:50px;" ></a>
             
         </div>
     </div>
