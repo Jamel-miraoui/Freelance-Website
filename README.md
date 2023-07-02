@@ -1,4 +1,4 @@
-<h4 align="center">A small Markdown Freelance website build with php </h4>
+<h4 align="center">A small Freelance website build with php </h4>
 
 <p align="center">
   <a href="https://github.com/shivammathur/setup-php" title="GitHub action to setup PHP"><img alt="GitHub Actions status" src="https://github.com/shivammathur/setup-php/workflows/Main%20workflow/badge.svg"></a>
