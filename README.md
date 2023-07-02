@@ -29,14 +29,15 @@ $ php -S localhost:8000
 
 Before uploading your PR, run test one last time to check if there are any errors. If it has no errors, commit and then push it!
 
-For more information on PR's steps, please see links in the Contributing section.
+For more information on PR's steps, please see links in the Contact section.
 
 ## 💬 Contact
-
-* [Code of Conduct](https://github.com/nhn/tui.editor/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing Guideline](https://github.com/nhn/tui.editor/blob/master/CONTRIBUTING.md)
-* [Commit Convention](https://github.com/nhn/tui.editor/blob/master/docs/COMMIT_MESSAGE_CONVENTION.md)
-* [Issue Guidelines](https://github.com/nhn/tui.editor/tree/master/.github/ISSUE_TEMPLATE)
+| Website | URL |
+| --- | --- |
+| <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> | https://www.linkedin.com/in/jamel-miraoui-10200923a |
+| <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /> | https://github.com/Jamel-miraoui?tab=repositories |
+| <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /> | https://www.facebook.com/jamel.miraoui.56/ |
+| <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /> | https://www.instagram.com/jamel.miraoui |
 
 ## 📜 License
 
