@@ -2,8 +2,8 @@
 
 <p align="center">
   <a href="https://github.com/shivammathur/setup-php" title="GitHub action to setup PHP"><img alt="GitHub Actions status" src="https://github.com/shivammathur/setup-php/workflows/Main%20workflow/badge.svg"></a>
-  <a href="https://saythanks.io/to/jamel.miraoui.sl" title="Code coverage"><img alt="" src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg"></a>
-  <a href="https://github.com/shivammathur/setup-php/blob/master/LICENSE" title="license"><img alt="LICENSE" src="https://img.shields.io/badge/license-MIT-428f7e.svg?logo=open%20source%20initiative&logoColor=white&labelColor=555555"></a>
+  <a href="https://saythanks.io/to/jamel.miraoui.sl" title=""><img alt="" src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg"></a>
+  <a href="" title="license"><img alt="LICENSE" src="https://img.shields.io/badge/license-MIT-428f7e.svg?logo=open%20source%20initiative&logoColor=white&labelColor=555555"></a>
 </p>
 
 <p align="center">
